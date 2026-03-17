@@ -1,6 +1,6 @@
 # Building and Hosting Agents with Google Vertex AI Agent Engine — A Deep Technical Guide
 
-> **Based on a thorough analysis of the [`adk-samples`](https://github.com/xue-cai/adk-samples) repository (63+ Python agent samples).**
+> **Based on a thorough analysis of the [`adk-samples`](../) repository (63+ Python agent samples).**
 
 ---
 
@@ -887,7 +887,7 @@ poetry build --format=wheel --output=deployment/
 ```python
 import vertexai
 from vertexai import agent_engines
-from vertexai.preview.reasoning_engines import AdkApp
+from vertexai.preview.reasoning_engines import AdkApp  # Note: preview API, may move to stable
 from customer_service.agent import root_agent
 
 # 1. Initialize Vertex AI
@@ -1221,4 +1221,4 @@ for event in remote_app.stream_query(
 
 ---
 
-*This analysis was generated from a comprehensive review of all 63+ agent samples, 427 Python files matching ADK patterns, 20+ deployment scripts, and supporting documentation in the `adk-samples` repository.*
+*This analysis is based on a comprehensive review of all 63+ agent samples, 427 Python files matching ADK patterns, 20+ deployment scripts, and supporting documentation in the `adk-samples` repository.*
